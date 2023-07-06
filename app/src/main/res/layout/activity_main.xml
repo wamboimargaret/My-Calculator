@@ -22,25 +22,20 @@
         android:id="@+id/btMultiply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="66dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="93dp"
         android:backgroundTint="#3F51B5"
         android:text="*"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btModules"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btAdd"
-        app:layout_constraintTop_toBottomOf="@+id/tilSecondNumber" />
+        app:layout_constraintTop_toTopOf="@+id/btAdd"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="150dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginTop="64dp"
         android:backgroundTint="#3F51B5"
         android:text="+"
         android:textSize="24sp"
@@ -53,9 +48,7 @@
         android:id="@+id/btSubtract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="150dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="#3F51B5"
         android:text="-"
         android:textSize="24sp"
@@ -67,14 +60,12 @@
         android:id="@+id/btModules"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="35dp"
         android:backgroundTint="#3F51B5"
         android:text="%"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btSubtract"
-        app:layout_constraintTop_toBottomOf="@+id/btMultiply" />
+        app:layout_constraintTop_toTopOf="@+id/btSubtract" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilFirstNumber"
@@ -92,7 +83,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#AFCAC7"
-            android:hint="Enter  a number" />
+            android:hint="Enter  a number"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -111,7 +103,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#A6CFCB"
-            android:hint="Enter a second number" />
+            android:hint="Enter a second number"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
